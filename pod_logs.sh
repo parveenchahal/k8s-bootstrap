@@ -14,7 +14,7 @@ fi
 pat_res=$(kubectl get pod -A | grep -i $pat | wc -l)
 if [ $pat_res -gt 1 ]
 then
-  echo 'Multiple results for pattern $pat'
+  echo "Multiple results for pattern $pat"
   exit
 fi
 
